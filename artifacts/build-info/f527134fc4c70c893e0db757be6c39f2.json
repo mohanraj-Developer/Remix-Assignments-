@@ -1,0 +1,69 @@
+{
+	"id": "f527134fc4c70c893e0db757be6c39f2",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.31",
+	"solcLongVersion": "0.8.31+commit.fd3a2265",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Assignment-3 (27.2.26)/2PremiumMemberShip2.sol": {
+				"content": "\r\n// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n/**\r\ncontract PremiumMember {\r\n\r\n    address public owner;\r\n    bool public isActive = true;\r\n    int public profitLossTrack;\r\n    uint public totalSubscriptionBalance;\r\n\r\n    struct Member {\r\n        string name;\r\n        uint balance;\r\n        bytes secretKey;\r\n    }\r\n\r\n    mapping(address => Member) public members;\r\n\r\n    constructor() {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    modifier onlyOwner() {\r\n        require(msg.sender == owner, \"Only admin allowed\");\r\n        _;\r\n    }\r\n\r\n    modifier whenActive() {\r\n        require(isActive, \"System is paused\");\r\n        _;\r\n    }\r\n\r\n    // 1️⃣ Member Identity Management\r\n    function setMember(string memory _member) public {\r\n        members[msg.sender].name = _member;\r\n    }\r\n\r\n    function verificationMember(string memory _member) public view returns (bool) {\r\n        return keccak256(abi.encodePacked(members[msg.sender].name)) ==\r\n               keccak256(abi.encodePacked(_member));\r\n    }\r\n\r\n    // 2️⃣ Subscription Payment (REAL ETH)\r\n    function setSubscription() public payable whenActive {\r\n        require(msg.value > 0, \"Send ETH\");\r\n\r\n        members[msg.sender].balance += msg.value;\r\n        totalSubscriptionBalance += msg.value;\r\n\r\n        profitLossTrack += int(msg.value);\r\n    }\r\n\r\n    function refund(uint amount) public whenActive {\r\n        require(members[msg.sender].balance >= amount, \"Insufficient balance\");\r\n\r\n        members[msg.sender].balance -= amount;\r\n        totalSubscriptionBalance -= amount;\r\n        profitLossTrack -= int(amount);\r\n\r\n        payable(msg.sender).transfer(amount);\r\n    }\r\n\r\n    // 4️⃣ System Control\r\n    function activate() public onlyOwner {\r\n        isActive = true;\r\n    }\r\n\r\n    function deactivate() public onlyOwner {\r\n        isActive = false;\r\n    }\r\n\r\n    // 5️⃣ Secret Key (Per User)\r\n    function setSecretKey(string memory _key) public {\r\n        members[msg.sender].secretKey = bytes(_key);\r\n    }\r\n\r\n    function getSecretKeyLength() public view returns (uint) {\r\n        return members[msg.sender].secretKey.length;\r\n    }\r\n\r\n    function getSecretKeyByte(uint index) public view returns (bytes1) {\r\n        require(index < members[msg.sender].secretKey.length, \"Out of range\");\r\n        return members[msg.sender].secretKey[index];\r\n    }\r\n\r\n    // 6️⃣ Summary\r\n    function summary() public view returns (\r\n        string memory,\r\n        uint,\r\n        int,\r\n        bool\r\n    ) {\r\n        return (\r\n            members[msg.sender].name,\r\n            totalSubscriptionBalance,\r\n            profitLossTrack,\r\n            isActive\r\n        );\r\n    }\r\n}\r\n**/"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"sources": {
+			"Assignment-3 (27.2.26)/2PremiumMemberShip2.sol": {
+				"ast": {
+					"absolutePath": "Assignment-3 (27.2.26)/2PremiumMemberShip2.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "MIT",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "35:23:0"
+						}
+					],
+					"src": "35:2639:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

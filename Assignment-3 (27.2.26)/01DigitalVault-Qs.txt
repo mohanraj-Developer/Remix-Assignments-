@@ -1,0 +1,41 @@
+*Final Assignment 2 – Digital Vault Contract*
+🎯 Contract Name: DigitalVault
+You are building a small blockchain-based secure vault system.
+🔹 1️⃣ User Section (String + Comparison)
+string public ownerName
+Function setOwnerName(string memory _name)
+Function verifyOwner(string memory _name)
+→ Return true if name matches (use keccak256)
+--------------------------------------------------------------------------------------------
+🔹 2️⃣ Vault Balance (uint)
+uint public vaultBalance
+Function deposit(uint amount)
+→ Increase vault balance
+Function withdraw(uint amount)
+→ Reduce balance (check balance before withdrawing using require())
+----------------------------------------------------------------------------------------------
+🔹 3️⃣ Vault Status (bool)
+bool public isVaultOpen
+Constructor sets vault to true
+Function openVault()
+Function closeVault()
+
+⚠ Condition:
+
+Deposit & Withdraw should only work if vault is open.
+Use require(isVaultOpen, "Vault is closed");
+
+🔹 4️⃣ Transaction Tracking (int)
+
+int public netTransaction
+Rules:
+Deposit → add positive value
+Withdraw → subtract value
+This can go negative if withdrawals exceed deposits.
+
+🔹 5️⃣ Secret Data Storage (bytes)
+bytes public secretCode
+Function setSecret(string memory _code)
+Function getSecretLength()
+Function getSecretByte(uint index)
+→ Validate index before returning

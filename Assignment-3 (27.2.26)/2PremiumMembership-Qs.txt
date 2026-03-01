@@ -1,0 +1,65 @@
+*Assignment - 3*
+
+📝 *Integrated Use Case – Blockchain-Based Premium Membership & Finance Management System*
+🎯 Use Case Scenario:
+
+A Web3 startup is launching a Blockchain-Based Premium Membership Platform where users can subscribe, access exclusive content, and receive a secure digital access key.
+The company wants full transparency and automation using a Smart Contract.
+You are hired as the Smart Contract Developer to design and implement this system.
+🔎 *Business Requirements*
+The system must handle:
+1️⃣ Member Identity Management
+Each member registers their name on the blockchain.
+The system must store the member’s name.
+It should allow updating the name.
+During login or verification, the contract must securely compare the entered name with the stored name.
+Direct string comparison is not allowed — secure hashing must be used.
+2️⃣ Subscription Payment Management (Financial Tracking)
+The platform operates on a subscription model.
+Members can pay subscription fees.
+The system must track total subscription balance.
+Members can request refunds.
+Refund should not be allowed if balance is insufficient.
+All payments and refunds must update the financial records automatically.
+3️⃣ Profit and Loss Tracking
+The company wants to monitor business performance directly from the smart contract.
+Every subscription payment increases profit.
+Every refund decreases profit.
+Profit can be positive or negative.
+The system must store and update this value dynamically.
+4️⃣ System Activation Control (Security Layer)
+For maintenance or emergency reasons, the admin must have the ability to pause the platform.
+The contract should store system status (active/inactive).
+When the system is inactive:
+Subscription payments must stop.
+Refunds must stop.
+Proper validation must prevent actions when paused.
+5️⃣ Secret Digital Access Key Storage
+Each premium member receives a digital access key stored on-chain.
+The system must store the access key securely.
+It should return the total length of the key.
+It must allow retrieving a specific byte from the key.
+Accessing invalid positions must be restricted.
+6️⃣ Complete System Summary
+The contract must provide one summary function that returns:
+Member name
+Total subscription balance
+Net profit/loss
+Current system status
+🧪 Real-Time Operational Scenario
+A user registers as "Techara"
+The user pays ₹3000 subscription
+The user requests ₹1000 refund
+The system stores secret key "PREMIUM"
+Admin pauses the system
+Another payment attempt fails
+Name verification with "Techara" returns true
+🎯 Technical Concepts Expected
+Students must correctly implement:
+uint → Subscription balance
+int → Profit/Loss tracking
+bool → System activation control
+string → Member identity
+bytes → Secret key storage
+require() → Validation & security
+keccak256() → Secure string comparison
