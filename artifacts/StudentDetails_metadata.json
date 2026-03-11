@@ -1,0 +1,108 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum StudentDetails.CourseStatus",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "addStudents",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					}
+				],
+				"name": "details",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum StudentDetails.CourseStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignment-4 (9.3.26)/classHW.sol": "StudentDetails"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignment-4 (9.3.26)/classHW.sol": {
+			"keccak256": "0x8f90df5ebf0b150ab9e5559fdf6f55ef97e84f4c4e8711fc02d8c598122ee189",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ba36f5805857db21516ecaf730d8b059bc03c9406521046bbdcfac9729b8d768",
+				"dweb:/ipfs/QmSd3aaE8yn7TpxH8VSZeCq4FmjyPaVfpfdKDV4tMKdCf1"
+			]
+		}
+	},
+	"version": 1
+}
