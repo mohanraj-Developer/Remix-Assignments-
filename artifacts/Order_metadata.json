@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getStatus",
+				"outputs": [
+					{
+						"internalType": "enum Order.orderStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum Order.orderStatus",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "setStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignment-5 (13.3.26)/Enum.sol": "Order"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignment-5 (13.3.26)/Enum.sol": {
+			"keccak256": "0x12b35c9a21e68d7297967f190235ff3e758149934842592120bd316c5ed46ee2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f57740dddf1d619dc1d763d12654b92c5bf508cc6f122bef711f190b7f5b48b3",
+				"dweb:/ipfs/QmV52eF4FKore5MRzQ1svQbFAxDtq3Lr5yXpdq5rHhmUJ7"
+			]
+		}
+	},
+	"version": 1
+}
