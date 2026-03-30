@@ -77,7 +77,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Assignment (23.2.26)/3String.sol": "UserProfile"
+			"Assignment-2 (23.2.26)/3String.sol": "UserProfile"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -91,7 +91,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Assignment (23.2.26)/3String.sol": {
+		"Assignment-2 (23.2.26)/3String.sol": {
 			"keccak256": "0xab1cd4f55ea046d5e1bb974a0b5a35b64afbb63c221f1e5f962159d3c842300c",
 			"license": "MIT",
 			"urls": [

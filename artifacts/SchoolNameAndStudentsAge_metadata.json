@@ -102,7 +102,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"assignment/Schoolnameandstudentage.sol": "SchoolNameAndStudentsAge"
+			"Assignment-1 (17.2.26)/Schoolnameandstudentage.sol": "SchoolNameAndStudentsAge"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -116,7 +116,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"assignment/Schoolnameandstudentage.sol": {
+		"Assignment-1 (17.2.26)/Schoolnameandstudentage.sol": {
 			"keccak256": "0x93c5ea0bc0d2837bb2baf3a9fdee48139a10a350422393154b7887c53e2ff961",
 			"license": "MIT",
 			"urls": [

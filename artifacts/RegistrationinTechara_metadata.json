@@ -71,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"assignment/EnrollmentInTechara.sol": "RegistrationinTechara"
+			"Assignment-1 (17.2.26)/EnrollmentInTechara.sol": "RegistrationinTechara"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -85,7 +85,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"assignment/EnrollmentInTechara.sol": {
+		"Assignment-1 (17.2.26)/EnrollmentInTechara.sol": {
 			"keccak256": "0x1771e8e2e130339c1bfffaec4e7c4f8911437d58b9a177982d8467c4bd5ee44c",
 			"license": "MIT",
 			"urls": [

@@ -1,0 +1,170 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "S1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "studentAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "enum StudentRegSystem.StudentStatus",
+						"name": "status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "Course",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_course",
+						"type": "string"
+					}
+				],
+				"name": "addCourse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_Staddress",
+						"type": "string"
+					},
+					{
+						"internalType": "enum StudentRegSystem.StudentStatus",
+						"name": "_status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "_course",
+						"type": "string"
+					}
+				],
+				"name": "registerStudent",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "setStudent",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "enum StudentRegSystem.StudentStatus",
+						"name": "",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignment-5_1 (16.3.26)/StudentRegistrationSystem.sol": "StudentRegSystem"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignment-5_1 (16.3.26)/StudentRegistrationSystem.sol": {
+			"keccak256": "0x9c6abe0a406de6fcd48cf73bd328a63ec4860669e62df6035f1213b94a161e46",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://68426675b041842f7e4148abea04d7ffa6e58ddcee21c750bda6db4101972bbc",
+				"dweb:/ipfs/QmRpo5NWzsoYzybyZThWmzdLZ9q8SDnmsCYp43SarCGZmg"
+			]
+		}
+	},
+	"version": 1
+}

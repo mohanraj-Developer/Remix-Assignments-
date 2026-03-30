@@ -71,7 +71,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Assignment (23.2.26)/2Boolean.sol": "ContractStatus"
+			"Assignment-2 (23.2.26)/2Boolean.sol": "ContractStatus"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -85,7 +85,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Assignment (23.2.26)/2Boolean.sol": {
+		"Assignment-2 (23.2.26)/2Boolean.sol": {
 			"keccak256": "0x40d17a73330efa58f25825959631b3363cbf47d20ff7cbda40a5b42d28cd430f",
 			"license": "MIT",
 			"urls": [

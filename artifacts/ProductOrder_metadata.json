@@ -1,0 +1,136 @@
+{
+	"compiler": {
+		"version": "0.8.31+commit.fd3a2265"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "key",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_qty",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_address",
+						"type": "string"
+					},
+					{
+						"internalType": "enum ProductOrder.OrderStatus",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "addProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_Pname",
+						"type": "string"
+					}
+				],
+				"name": "addProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "key",
+						"type": "uint256"
+					}
+				],
+				"name": "getOrder",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "enum ProductOrder.OrderStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Assignment-5_1 (16.3.26)/ProductOrder.sol": "ProductOrder"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Assignment-5_1 (16.3.26)/ProductOrder.sol": {
+			"keccak256": "0x4228fb5615f57d6f3d913e614da7a1e77194419c7ca90642df4ec052dff2ad19",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e3e2ac0a078492606a5d8c3b1566ca27b5c463a156f51b60ab365a14b4f4c702",
+				"dweb:/ipfs/QmWCu3H2ZUD7bQjCEEJv68jJk72XJ7VeTKJJuxJsfs3AiN"
+			]
+		}
+	},
+	"version": 1
+}

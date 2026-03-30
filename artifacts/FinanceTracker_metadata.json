@@ -94,7 +94,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Assignment (23.2.26)/1Integer.sol": "FinanceTracker"
+			"Assignment-2 (23.2.26)/1Integer.sol": "FinanceTracker"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -108,7 +108,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Assignment (23.2.26)/1Integer.sol": {
+		"Assignment-2 (23.2.26)/1Integer.sol": {
 			"keccak256": "0x4075390b572cd92f800085ad85f51ffc669a0c8c7446ffb7c2876e5c6c2fae88",
 			"license": "MIT",
 			"urls": [

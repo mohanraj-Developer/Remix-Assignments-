@@ -63,7 +63,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"assignment/CollegesinTN.sol": "TamilnaduColleges"
+			"Assignment-1 (17.2.26)/CollegesinTN.sol": "TamilnaduColleges"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -77,7 +77,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"assignment/CollegesinTN.sol": {
+		"Assignment-1 (17.2.26)/CollegesinTN.sol": {
 			"keccak256": "0xe142c64aa5f7058441e401648f0c4af5c6cbf2101306e3e51c4d88e273be361c",
 			"license": "MIT",
 			"urls": [

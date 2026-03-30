@@ -77,7 +77,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Assignment (23.2.26)/4Bytes.sol": "DataStorage"
+			"Assignment-2 (23.2.26)/4Bytes.sol": "DataStorage"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -91,7 +91,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"Assignment (23.2.26)/4Bytes.sol": {
+		"Assignment-2 (23.2.26)/4Bytes.sol": {
 			"keccak256": "0xddb2488b03ad5bbc376b329090777a1e8d0cffe24d729cb1875d5f2f92c0c2f5",
 			"license": "MIT",
 			"urls": [
